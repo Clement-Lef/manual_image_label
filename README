@@ -1,0 +1,18 @@
+This script is used to manually label images into multiple categories using python. It will display a window with
+images that must be labeled using keyboard strokes.
+
+Requirements:
+    - tkinter library
+
+Dataset:
+    - The images to be classified must be stored in a dataset folder where the script resides
+
+How to run:
+    - The script takes two arguments
+        - '-categories': List of categories to label these images into (i.e -categories Cat Dog Tiger)
+        - '-keys': List of keyboard key to label the images into their respective category (i.e -keys c d t)
+            Can also takes directional arrow as keys with 'Left', 'Right', 'Up', 'Down'
+
+    - Examples:
+        python label_images.py -categories Dog Cat -keys Left Right
+        python label_images.py -categories Dog Cat Tiger -keys d c t
